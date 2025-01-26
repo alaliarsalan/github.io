@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broadway Network Solutions - Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%); }
+        .nav-link { 
+            position: relative; 
+            padding: 1rem 0.5rem;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #3B82F6;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease-in-out;
+        }
+        .nav-link:hover::after { 
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        #mobileMenu {
+            display: none;
+        }
+        #mobileMenu.show {
+            display: block;
+        }
+        .card-hover {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg fixed w-full z-10" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <i class="fas fa-shield-alt text-blue-500 text-2xl mr-2" aria-hidden="true"></i>
+                        <span class="font-bold text-xl">Broadway Network Solutions</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-blue-500 transition duration-300">Home</a>
+                    <a href="services.html" class="nav-link text-white hover:text-blue-500 transition duration-300">Services</a>
+                    <a href="contact.html" class="nav-link text-white hover:text-blue-500 transition duration-300">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-4 text-white focus:outline-none" id="menuBtn" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-xl" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden bg-gray-800" id="mobileMenu">
+                <a href="index.html" class="block py-3 px-4 text-white hover:bg-gray-700">Home</a>
+                <a href="services.html" class="block py-3 px-4 text-white hover:bg-gray-700">Services</a>
+                <a href="contact.html" class="block py-3 px-4 text-white hover:bg-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg pt-24 pb-12 text-white" aria-label="Main hero section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Comprehensive Cybersecurity Solutions</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Protecting Your Digital Assets with Advanced Security Services</p>
+                <a href="contact.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block transform hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-16" aria-label="Services overview">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Core Services</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Strategic Advisory Card -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-line text-blue-500 text-3xl mr-4" aria-hidden="true"></i>
+                        <h3 class="text-2xl font-bold">Strategic Advisory</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Expert guidance aligning security strategy with business objectives</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                            Risk Management Frameworks
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                            Compliance Strategy Development
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                            vCISO Services
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                            Security Program Architecture
+                        </li>
+                    </ul>
+                    <a href="services.html#vciso" class="mt-6 inline-block text-blue-500 hover:text-blue-600 font-semibold transition duration-300">
+                        Learn More <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <!-- Technical Implementation Card -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shield-alt text-blue-500 text-3xl mr-4" aria-hidden="true"></i>
+                        <h3 class="text-2xl font-bold">Technical Implementation</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Robust security infrastructure deployment and management</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                            Cloud Security Architecture
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                            Zero Trust Implementation
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                            Vulnerability Management
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                            Policy & Controls Development
+                        </li>
+                    </ul>
+                    <a href="services.html#technical" class="mt-6 inline-block text-blue-500 hover:text-blue-600 font-semibold transition duration-300">
+                        Learn More <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="py-16 bg-blue-50" aria-label="Our value proposition">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us?</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <i class="fas fa-chess-king text-blue-500 text-4xl mb-4" aria-hidden="true"></i>
+                    <h3 class="font-bold mb-2 text-lg">Strategic Leadership</h3>
+                    <p class="text-gray-600">CISO-level expertise without the full-time commitment</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <i class="fas fa-puzzle-piece text-blue-500 text-4xl mb-4" aria-hidden="true"></i>
+                    <h3 class="font-bold mb-2 text-lg">Holistic Approach</h3>
+                    <p class="text-gray-600">Integrating people, processes, and technology</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <i class="fas fa-handshake text-blue-500 text-4xl mb-4" aria-hidden="true"></i>
+                    <h3 class="font-bold mb-2 text-lg">Business Integration</h3>
+                    <p class="text-gray-600">Security strategies that enable operational excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12" aria-label="Footer">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">About Us</h4>
+                    <p class="text-gray-400">Delivering comprehensive cybersecurity solutions to protect your business in an evolving threat landscape.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2" aria-hidden="true"></i>
+                            <span>24/7 Support Available</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
+                            <span>info@broawaysolutions.ca</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Broadway Network Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('mobileMenu');
+            const menuBtn = document.getElementById('menuBtn');
+            
+            if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
