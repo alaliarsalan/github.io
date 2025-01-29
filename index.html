@@ -30,10 +30,19 @@
             transform-origin: left;
         }
         #mobileMenu {
-            display: none;
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
         }
         #mobileMenu.show {
             display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+        #mobileMenu.hidden {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
         }
         .card-hover {
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
@@ -209,6 +218,10 @@
                             <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
                             <span>info@broawaysolutions.ca</span>
                         </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2" aria-hidden="true"></i>
+                            <span>Mississauga, Ontario, Canada</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -219,20 +232,34 @@
     </footer>
 
     <script>
-        // Mobile menu toggle
-        document.getElementById('menuBtn').addEventListener('click', function() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const menu = document.getElementById('mobileMenu');
+        document.addEventListener('DOMContentLoaded', function() {
             const menuBtn = document.getElementById('menuBtn');
-            
-            if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
-                menu.classList.add('hidden');
-            }
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            menuBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('show');
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileMenu.contains(event.target) && 
+                    !menuBtn.contains(event.target) && 
+                    mobileMenu.classList.contains('show')) {
+                    mobileMenu.classList.remove('show');
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+
+            // Close mobile menu when clicking on a menu item
+            const menuItems = mobileMenu.querySelectorAll('a');
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    mobileMenu.classList.remove('show');
+                    mobileMenu.classList.add('hidden');
+                });
+            });
         });
     </script>
 </body>

@@ -30,10 +30,19 @@
             transform-origin: left;
         }
         #mobileMenu {
-            display: none;
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
         }
         #mobileMenu.show {
             display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+        #mobileMenu.hidden {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
         }
         .service-section {
             padding: 2rem 0;
@@ -42,16 +51,24 @@
             margin-bottom: 1.5rem;
             padding: 1.5rem;
         }
+        @media (max-width: 768px) {
+            .service-card {
+                padding: 1rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-gray-900 text-white shadow-lg fixed w-full z-10" aria-label="Main navigation">
+    <nav class="bg-gray-900 text-white shadow-lg fixed w-full z-10">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between">
                 <div class="flex space-x-7">
                     <div class="flex items-center py-4">
-                        <i class="fas fa-shield-alt text-blue-500 text-2xl mr-2" aria-hidden="true"></i>
+                        <i class="fas fa-shield-alt text-blue-500 text-2xl mr-2"></i>
                         <span class="font-bold text-xl">Broadway Network Solutions</span>
                     </div>
                 </div>
@@ -64,8 +81,8 @@
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button class="md:hidden p-4 text-white focus:outline-none" id="menuBtn" aria-label="Toggle mobile menu">
-                    <i class="fas fa-bars text-xl" aria-hidden="true"></i>
+                <button class="md:hidden p-4 text-white focus:outline-none" id="menuBtn">
+                    <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
 
@@ -79,7 +96,7 @@
     </nav>
 
     <!-- Services Header -->
-    <section class="gradient-bg pt-24 pb-12 text-white" aria-label="Services introduction">
+    <section class="gradient-bg pt-24 pb-12 text-white">
         <div class="max-w-7xl mx-auto px-4 py-16 text-center">
             <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
             <p class="text-xl max-w-3xl mx-auto">Align cybersecurity initiatives with business goals through expert guidance. We help organizations build resilient security postures by identifying risks, prioritizing investments, and aligning strategies with regulatory requirements.</p>
@@ -89,7 +106,7 @@
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4">
         <!-- Virtual CISO Services -->
-        <section class="service-section" aria-label="Virtual CISO services">
+        <section class="service-section">
             <div class="bg-white rounded-lg shadow-lg service-card">
                 <h2 class="text-3xl font-bold mb-6">Virtual CISO (vCISO) Services</h2>
                 <p class="text-gray-600 mb-6">Executive cybersecurity leadership tailored to your budget and goals.</p>
@@ -99,15 +116,15 @@
                         <h3 class="text-xl font-bold mb-4">Strategic Governance</h3>
                         <ul class="space-y-2">
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 Oversight of security programs
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 Policy development frameworks
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 Accountability structure implementation
                             </li>
                         </ul>
@@ -116,15 +133,15 @@
                         <h3 class="text-xl font-bold mb-4">Risk Prioritization</h3>
                         <ul class="space-y-2">
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 Security investment alignment
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 Critical threat analysis
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 Business objective mapping
                             </li>
                         </ul>
@@ -133,15 +150,15 @@
                         <h3 class="text-xl font-bold mb-4">Compliance Roadmaps</h3>
                         <ul class="space-y-2">
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 SOC 2 & PCI DSS preparation
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 GDPR/HIPAA compliance
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 Regulatory gap analysis
                             </li>
                         </ul>
@@ -151,25 +168,24 @@
         </section>
 
         <!-- Risk Management & Compliance -->
-        <section class="service-section" aria-label="Risk management and compliance">
+        <section class="service-section">
             <div class="bg-white rounded-lg shadow-lg service-card">
                 <h2 class="text-3xl font-bold mb-6">Risk Management & Compliance</h2>
                 <p class="text-gray-600 mb-6">Proactively identify, prioritize, and mitigate risks across systems and workflows.</p>
-
                 <div class="grid md:grid-cols-2 gap-8 mb-8">
                     <div>
                         <h3 class="text-xl font-bold mb-4">Risk Assessments</h3>
                         <ul class="space-y-2">
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 MITRE ATT&CK framework
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 NIST CSF implementation
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 Threat modeling
                             </li>
                         </ul>
@@ -178,15 +194,15 @@
                         <h3 class="text-xl font-bold mb-4">Policy Development</h3>
                         <ul class="space-y-2">
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 IoT security frameworks
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 Cloud governance policies
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 Access control systems
                             </li>
                         </ul>
@@ -196,7 +212,7 @@
         </section>
 
         <!-- Technical Security Services -->
-        <section class="service-section" aria-label="Technical security services">
+        <section class="service-section">
             <div class="bg-white rounded-lg shadow-lg service-card">
                 <h2 class="text-3xl font-bold mb-6">Technical Security Services</h2>
                 <p class="text-gray-600 mb-6">Secure your infrastructure with compliance-first solutions.</p>
@@ -206,11 +222,11 @@
                         <h3 class="text-xl font-bold mb-4">Cloud Security</h3>
                         <ul class="space-y-2">
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 AWS/Azure hardening
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 Compliance configurations
                             </li>
                         </ul>
@@ -219,11 +235,11 @@
                         <h3 class="text-xl font-bold mb-4">Zero Trust Architecture</h3>
                         <ul class="space-y-2">
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 Secure access controls
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 Network segmentation
                             </li>
                         </ul>
@@ -232,11 +248,11 @@
                         <h3 class="text-xl font-bold mb-4">Vulnerability Management</h3>
                         <ul class="space-y-2">
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 Scanning & prioritization
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
                                 Remediation workflows
                             </li>
                         </ul>
@@ -245,8 +261,8 @@
             </div>
         </section>
 
-        <!-- Why Choose Us -->
-        <section class="service-section" aria-label="Why choose us">
+        <!-- Why Partner With Us -->
+        <section class="service-section">
             <div class="bg-blue-50 rounded-lg shadow-lg service-card">
                 <h2 class="text-3xl font-bold mb-6 text-center">Why Partner With Us?</h2>
                 <p class="text-xl text-gray-600 mb-8 text-center max-w-2xl mx-auto">Where deep expertise meets actionable security strategies - cutting through complexity to deliver measurable results.</p>
@@ -257,21 +273,21 @@
                         <h3 class="text-2xl font-bold mb-6 text-center text-blue-600">Our Differentiators</h3>
                         <ul class="space-y-4">
                             <li class="flex items-start p-4 hover:bg-gray-50 rounded-lg transition">
-                                <i class="fas fa-balance-scale text-purple-500 text-xl mr-3 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-balance-scale text-purple-500 text-xl mr-3 mt-1"></i>
                                 <div>
                                     <h4 class="font-semibold mb-1">Vendor-Neutral Guidance</h4>
                                     <p class="text-gray-600">Technology-agnostic strategies tailored to your stack</p>
                                 </div>
                             </li>
                             <li class="flex items-start p-4 hover:bg-gray-50 rounded-lg transition">
-                                <i class="fas fa-book-open text-green-500 text-xl mr-3 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-book-open text-green-500 text-xl mr-3 mt-1"></i>
                                 <div>
                                     <h4 class="font-semibold mb-1">Regulatory Expertise</h4>
                                     <p class="text-gray-600">Simplified compliance navigation across multiple frameworks</p>
                                 </div>
                             </li>
                             <li class="flex items-start p-4 hover:bg-gray-50 rounded-lg transition">
-                                <i class="fas fa-comments text-blue-500 text-xl mr-3 mt-1" aria-hidden="true"></i>
+                                <i class="fas fa-comments text-blue-500 text-xl mr-3 mt-1"></i>
                                 <div>
                                     <h4 class="font-semibold mb-1">Clear Communication</h4>
                                     <p class="text-gray-600">Jargon-free reporting and executive alignment</p>
@@ -310,8 +326,7 @@
             </div>
         </section>
     </main>
-
-    <!-- Footer -->
+     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12" aria-label="Footer">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8">
@@ -337,6 +352,10 @@
                             <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
                             <span>info@broawaysolutions.ca</span>
                         </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2" aria-hidden="true"></i>
+                            <span>Mississauga, Ontario, Canada</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -347,20 +366,32 @@
     </footer>
 
     <script>
-        // Mobile menu toggle
-        document.getElementById('menuBtn').addEventListener('click', function() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const menu = document.getElementById('mobileMenu');
+        document.addEventListener('DOMContentLoaded', function() {
             const menuBtn = document.getElementById('menuBtn');
-            
-            if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
-                menu.classList.add('hidden');
-            }
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            menuBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('show');
+            });
+
+            document.addEventListener('click', function(event) {
+                if (!mobileMenu.contains(event.target) && 
+                    !menuBtn.contains(event.target) && 
+                    mobileMenu.classList.contains('show')) {
+                    mobileMenu.classList.remove('show');
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+
+            const menuItems = mobileMenu.querySelectorAll('a');
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    mobileMenu.classList.remove('show');
+                    mobileMenu.classList.add('hidden');
+                });
+            });
         });
     </script>
 </body>
