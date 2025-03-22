@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Services | Broadway Network Solutions</title>
+    <meta name="description" content="Explore our comprehensive cybersecurity services including vCISO, risk management, compliance, and technical security solutions tailored for your business needs.">
+    <meta name="keywords" content="cybersecurity services, vCISO, risk management, compliance, technical security, zero trust, cloud security, Broadway Network Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://broadwaysolutions.ca/services.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://broadwaysolutions.ca/services.html">
+    <meta property="og:title" content="Cybersecurity Services | Broadway Network Solutions">
+    <meta property="og:description" content="Comprehensive cybersecurity services including vCISO, risk management, compliance, and technical security solutions.">
+    <meta property="og:image" content="https://broadwaysolutions.ca/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://broadwaysolutions.ca/services.html">
+    <meta property="twitter:title" content="Cybersecurity Services | Broadway Network Solutions">
+    <meta property="twitter:description" content="Comprehensive cybersecurity services including vCISO, risk management, compliance, and technical security solutions.">
+    <meta property="twitter:image" content="https://broadwaysolutions.ca/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%); }
+        .nav-link { 
+            position: relative; 
+            padding: 1rem 0.5rem;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #3B82F6;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease-in-out;
+        }
+        .nav-link:hover::after { 
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        #mobileMenu {
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+        }
+        #mobileMenu.show {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+        #mobileMenu.hidden {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .service-section {
+            padding: 2rem 0;
+        }
+        .service-card {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .service-card {
+                padding: 1rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg fixed w-full z-10" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <i class="fas fa-shield-alt text-blue-500 text-2xl mr-2" aria-hidden="true"></i>
+                        <span class="font-bold text-xl">Broadway Network Solutions</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-blue-500 transition duration-300">Home</a>
+                    <a href="services.html" class="nav-link text-white hover:text-blue-500 transition duration-300">Services</a>
+                    <a href="blog.html" class="nav-link text-white hover:text-blue-500 transition duration-300">Blog</a>
+                    <a href="contact.html" class="nav-link text-white hover:text-blue-500 transition duration-300">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-4 text-white focus:outline-none" id="menuBtn" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-xl" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden bg-gray-800" id="mobileMenu">
+                <a href="index.html" class="block py-3 px-4 text-white hover:bg-gray-700">Home</a>
+                <a href="services.html" class="block py-3 px-4 text-white hover:bg-gray-700">Services</a>
+                <a href="blog.html" class="block py-3 px-4 text-white hover:bg-gray-700">Blog</a>
+                <a href="contact.html" class="block py-3 px-4 text-white hover:bg-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <section class="gradient-bg pt-24 pb-12 text-white" aria-label="Services header">
+        <div class="max-w-7xl mx-auto px-4 py-16 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
+            <p class="text-xl max-w-3xl mx-auto">Align cybersecurity initiatives with business goals through expert guidance. We help organizations build resilient security postures by identifying risks, prioritizing investments, and aligning strategies with regulatory requirements.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4">
+        <!-- Virtual CISO Services -->
+        <section id="vciso" class="service-section">
+            <div class="bg-white rounded-lg shadow-lg service-card">
+                <h2 class="text-3xl font-bold mb-6">Virtual CISO (vCISO) Services</h2>
+                <p class="text-gray-600 mb-6">Executive cybersecurity leadership tailored to your budget and goals.</p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Strategic Governance</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                Oversight of security programs
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                Policy development frameworks
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                Accountability structure implementation
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Risk Prioritization</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                Security investment alignment
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                Critical threat analysis
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                Business objective mapping
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Compliance Roadmaps</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                SOC 2 & PCI DSS preparation
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                GDPR/HIPAA compliance
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                Regulatory gap analysis
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Risk Management & Compliance -->
+        <section id="risk-management" class="service-section">
+            <div class="bg-white rounded-lg shadow-lg service-card">
+                <h2 class="text-3xl font-bold mb-6">Risk Management & Compliance</h2>
+                <p class="text-gray-600 mb-6">Proactively identify, prioritize, and mitigate risks across systems and workflows.</p>
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Risk Assessments</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                MITRE ATT&CK framework
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                NIST CSF implementation
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                Threat modeling
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Policy Development</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                IoT security frameworks
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                Cloud governance policies
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                Access control systems
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Security Services -->
+        <section id="technical" class="service-section">
+            <div class="bg-white rounded-lg shadow-lg service-card">
+                <h2 class="text-3xl font-bold mb-6">Technical Security Services</h2>
+                <p class="text-gray-600 mb-6">Secure your infrastructure with compliance-first solutions.</p>
+
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Cloud Security</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                AWS/Azure hardening
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                Compliance configurations
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Zero Trust Architecture</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                Secure access controls
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                Network segmentation
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Vulnerability Management</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                Scanning & prioritization
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                Remediation workflows
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Partner With Us -->
+        <section class="service-section">
+            <div class="bg-blue-50 rounded-lg shadow-lg service-card">
+                <h2 class="text-3xl font-bold mb-6 text-center">Why Partner With Us?</h2>
+                <p class="text-xl text-gray-600 mb-8 text-center max-w-2xl mx-auto">Where deep expertise meets actionable security strategies - cutting through complexity to deliver measurable results.</p>
+
+                <!-- Differentiators Section -->
+                <div class="mb-12">
+                    <div class="bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto">
+                        <h3 class="text-2xl font-bold mb-6 text-center text-blue-600">Our Differentiators</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start p-4 hover:bg-gray-50 rounded-lg transition">
+                                <i class="fas fa-balance-scale text-purple-500 text-xl mr-3 mt-1" aria-hidden="true"></i>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Vendor-Neutral Guidance</h4>
+                                    <p class="text-gray-600">Technology-agnostic strategies tailored to your stack</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start p-4 hover:bg-gray-50 rounded-lg transition">
+                                <i class="fas fa-book-open text-green-500 text-xl mr-3 mt-1" aria-hidden="true"></i>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Regulatory Expertise</h4>
+                                    <p class="text-gray-600">Simplified compliance navigation across multiple frameworks</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start p-4 hover:bg-gray-50 rounded-lg transition">
+                                <i class="fas fa-comments text-blue-500 text-xl mr-3 mt-1" aria-hidden="true"></i>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Clear Communication</h4>
+                                    <p class="text-gray-600">Jargon-free reporting and executive alignment</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Feature Columns -->
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="text-center p-4">
+                        <div class="mb-4 text-blue-500 text-3xl">
+                            <i class="fas fa-certificate" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Certified Excellence</h3>
+                        <p class="text-gray-600">OSCP, CCIE Security, and CISSP certified professionals</p>
+                    </div>
+
+                    <div class="text-center p-4">
+                        <div class="mb-4 text-blue-500 text-3xl">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Business Alignment</h3>
+                        <p class="text-gray-600">Security strategies that support organizational growth</p>
+                    </div>
+
+                    <div class="text-center p-4">
+                        <div class="mb-4 text-blue-500 text-3xl">
+                            <i class="fas fa-users-cog" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Tailored Solutions</h3>
+                        <p class="text-gray-600">Custom implementations matching your operational needs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+     <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12" aria-label="Footer">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">About Us</h4>
+                    <p class="text-gray-400">Delivering comprehensive cybersecurity solutions to protect your business in an evolving threat landscape.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2" aria-hidden="true"></i>
+                            <span>24/7 Support Available</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
+                            <span>info@broadwaysolutions.ca</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2" aria-hidden="true"></i>
+                            <span>Mississauga, Ontario, Canada</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Broadway Network Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Cybersecurity Services | Broadway Network Solutions",
+      "description": "Comprehensive cybersecurity services including vCISO, risk management, compliance, and technical security solutions.",
+      "url": "https://broadwaysolutions.ca/services.html",
+      "mainEntity": {
+        "@type": "Service",
+        "name": "Cybersecurity Services",
+        "provider": {
+          "@type": "Organization",
+          "name": "Broadway Network Solutions",
+          "url": "https://broadwaysolutions.ca"
+        },
+        "serviceType": "Cybersecurity",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "CAD",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.getElementById('menuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            menuBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('show');
+            });
+
+            document.addEventListener('click', function(event) {
+                if (!mobileMenu.contains(event.target) && 
+                    !menuBtn.contains(event.target) && 
+                    mobileMenu.classList.contains('show')) {
+                    mobileMenu.classList.remove('show');
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+
+            const menuItems = mobileMenu.querySelectorAll('a');
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    mobileMenu.classList.remove('show');
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

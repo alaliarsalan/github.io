@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Blog | Broadway Network Solutions</title>
+    <meta name="description" content="Stay updated with the latest cybersecurity insights, trends, and best practices from Broadway Network Solutions' security experts.">
+    <meta name="keywords" content="cybersecurity blog, security insights, network security blog, cybersecurity trends, security best practices, Broadway Network Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://broadwaysolutions.ca/blog.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://broadwaysolutions.ca/blog.html">
+    <meta property="og:title" content="Cybersecurity Blog | Broadway Network Solutions">
+    <meta property="og:description" content="Stay updated with the latest cybersecurity insights, trends, and best practices from Broadway Network Solutions' security experts.">
+    <meta property="og:image" content="https://broadwaysolutions.ca/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://broadwaysolutions.ca/blog.html">
+    <meta property="twitter:title" content="Cybersecurity Blog | Broadway Network Solutions">
+    <meta property="twitter:description" content="Stay updated with the latest cybersecurity insights, trends, and best practices from Broadway Network Solutions' security experts.">
+    <meta property="twitter:image" content="https://broadwaysolutions.ca/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%); }
+        .nav-link { 
+            position: relative; 
+            padding: 1rem 0.5rem;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #3B82F6;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease-in-out;
+        }
+        .nav-link:hover::after { 
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        #mobileMenu {
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+        }
+        #mobileMenu.show {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+        #mobileMenu.hidden {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .blog-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .blog-tag {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            background-color: #EBF5FF;
+            color: #3B82F6;
+            font-weight: 500;
+            display: inline-block;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg fixed w-full z-10" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <i class="fas fa-shield-alt text-blue-500 text-2xl mr-2" aria-hidden="true"></i>
+                        <span class="font-bold text-xl">Broadway Network Solutions</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-blue-500 transition duration-300">Home</a>
+                    <a href="services.html" class="nav-link text-white hover:text-blue-500 transition duration-300">Services</a>
+                    <a href="blog.html" class="nav-link text-white hover:text-blue-500 transition duration-300">Blog</a>
+                    <a href="contact.html" class="nav-link text-white hover:text-blue-500 transition duration-300">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-4 text-white focus:outline-none" id="menuBtn" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-xl" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden bg-gray-800" id="mobileMenu">
+                <a href="index.html" class="block py-3 px-4 text-white hover:bg-gray-700">Home</a>
+                <a href="services.html" class="block py-3 px-4 text-white hover:bg-gray-700">Services</a>
+                <a href="blog.html" class="block py-3 px-4 text-white hover:bg-gray-700">Blog</a>
+                <a href="contact.html" class="block py-3 px-4 text-white hover:bg-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="gradient-bg pt-24 pb-12 text-white" aria-label="Blog header">
+        <div class="max-w-7xl mx-auto px-4 py-16 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Cybersecurity Insights</h1>
+            <p class="text-xl max-w-3xl mx-auto">Stay updated with the latest cybersecurity trends, best practices, and expert advice to protect your business in an evolving threat landscape.</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <main class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <!-- Blog Articles -->
+            <div class="space-y-12">
+                <!-- SOC 2 Readiness Guide -->
+                <div class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-4">
+                            <span class="mr-4"><i class="far fa-calendar-alt mr-2"></i> March 10, 2025</span>
+                            <span><i class="far fa-clock mr-2"></i> 10 min read</span>
+                        </div>
+                        <h1 class="text-3xl font-bold mb-3">The Ultimate Guide to SOC 2 Readiness: A Step-by-Step Approach</h1>
+                        <div class="mb-4">
+                            <span class="blog-tag">SOC 2</span>
+                            <span class="blog-tag">ISO 27001</span>
+                            <span class="blog-tag">Compliance</span>
+                            <span class="blog-tag">Audit</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">If you're a mid-sized business handling sensitive customer data, especially in a regulated industry like finance, healthcare, or technology, you've likely heard of SOC 2 compliance. Maybe a potential client requires it. Maybe you're proactively looking to strengthen your security posture and build trust. Whatever the reason, navigating the path to SOC 2 readiness can feel daunting. It's more than just checking boxes; it's about building a robust and sustainable security program.</p>
+                        <p class="text-gray-600 mb-4">This guide breaks down the SOC 2 readiness process into manageable steps, providing a practical roadmap for your journey. We'll go beyond the basics, explaining why these steps are important and how Broadway Network Solutions can help you achieve success – without the headaches and hidden costs often associated with compliance efforts.</p>
+                        <button onclick="toggleArticle('article1')" class="text-blue-500 hover:text-blue-700 font-semibold inline-flex items-center cursor-pointer">
+                            Read More <i class="fas fa-arrow-down ml-2" aria-hidden="true"></i>
+                        </button>
+                        <div id="article1" class="hidden mt-4 article-content">
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">What is SOC 2, and Why Does It Matter?</h2>
+                            <p class="mb-4">SOC 2 (System and Organization Controls 2) is a framework developed by the American Institute of Certified Public Accountants (AICPA) to ensure service providers securely manage data to protect the interests of their organization and the privacy of its clients. It's not a law, like GDPR or HIPAA, but it's rapidly becoming a de facto standard, especially for businesses that handle:</p>
+                            <ul class="list-disc list-inside mb-4 pl-4 bg-gray-50 p-4 rounded-lg">
+                                <li class="mb-2">Customer Data: Personally Identifiable Information (PII), financial data, health information</li>
+                                <li class="mb-2">Cloud Services: If you're a SaaS provider, cloud hosting company, or offer any cloud-based services, SOC 2 is almost certainly on your radar</li>
+                                <li class="mb-2">Business-to-Business (B2B) Services: Larger enterprises are increasingly requiring SOC 2 compliance from their vendors and partners</li>
+                            </ul>
+                            <p class="mb-4">A SOC 2 report provides assurance to your clients and partners that you have adequate controls in place to protect their data. It demonstrates your commitment to security and can be a significant competitive advantage. Failing to achieve SOC 2 readiness can mean lost business opportunities, damaged reputation, and potential security breaches.</p>
+
+                            <h3 class="text-xl font-bold mb-4 text-blue-600">The Five Trust Services Criteria (TSCs)</h3>
+                            <div class="grid md:grid-cols-2 gap-6 mb-4">
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">1. Security (Common Criteria)</h4>
+                                    <p>Foundation of SOC 2 covering firewalls, access controls, and security awareness training</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">2. Availability</h4>
+                                    <p>System accessibility including disaster recovery and business continuity</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">3. Processing Integrity</h4>
+                                    <p>Ensuring complete, accurate, and authorized data processing</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">4. Confidentiality</h4>
+                                    <p>Protection through encryption and data loss prevention</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">5. Privacy</h4>
+                                    <p>Handling personal information per AICPA's GAPP principles</p>
+                                </div>
+                            </div>
+
+                            <h3 class="text-xl font-bold mb-4 text-blue-600">SOC 2 Type 1 vs. Type 2</h3>
+                            <div class="grid md:grid-cols-2 gap-6 mb-4">
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Type 1</h4>
+                                    <ul class="list-disc list-inside">
+                                        <li>Assesses control design at a point in time</li>
+                                        <li>Good starting point for compliance</li>
+                                    </ul>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Type 2</h4>
+                                    <ul class="list-disc list-inside">
+                                        <li>Assesses control effectiveness over 6-12 months</li>
+                                        <li>Required by most enterprise clients</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Our 4-Phase SOC 2 Readiness Process</h2>
+                            <div class="space-y-8">
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                                        <i class="fas fa-search mr-2"></i>
+                                        Phase 1: Initial Assessment (4-6 Weeks)
+                                    </h3>
+                                    <ul class="list-disc list-inside pl-4">
+                                        <li class="mb-2">Comprehensive stakeholder interviews</li>
+                                        <li class="mb-2">Vulnerability assessment & penetration testing</li>
+                                        <li class="mb-2">Compliance gap analysis</li>
+                                        <li class="mb-2">Business impact analysis</li>
+                                    </ul>
+                                </div>
+
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                                        <i class="fas fa-road mr-2"></i>
+                                        Phase 2: Remediation Planning (2-3 Weeks)
+                                    </h3>
+                                    <ul class="list-disc list-inside pl-4">
+                                        <li class="mb-2">Customized implementation roadmap</li>
+                                        <li class="mb-2">Policy development & refinement</li>
+                                        <li class="mb-2">Vendor-neutral technology recommendations</li>
+                                        <li class="mb-2">Auditor selection guidance</li>
+                                    </ul>
+                                </div>
+
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                                        <i class="fas fa-shield-alt mr-2"></i>
+                                        Phase 3: Specialized Assessments
+                                    </h3>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Cloud Security</h4>
+                                            <p>AWS/Azure/GCP configuration audits</p>
+                                        </div>
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Penetration Testing</h4>
+                                            <p>Web app & network vulnerability testing</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                                        <i class="fas fa-check-double mr-2"></i>
+                                        Phase 4: Implementation & Validation
+                                    </h3>
+                                    <ul class="list-disc list-inside pl-4">
+                                        <li class="mb-2">Technical implementation support</li>
+                                        <li class="mb-2">Vendor management assistance</li>
+                                        <li class="mb-2">Audit preparation workshops</li>
+                                        <li class="mb-2">Continuous compliance monitoring</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Why Choose Broadway Network Solutions?</h2>
+                            <div class="grid md:grid-cols-2 gap-6 mb-4">
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="font-bold mb-2">15+ Years Expertise</h3>
+                                    <p>CISSP, OSCP, CCIE Security certified professionals</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="font-bold mb-2">Custom Solutions</h3>
+                                    <p>Tailored implementations not generic checklists</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="font-bold mb-2">Audit Success</h3>
+                                    <p>95% first-time audit pass rate</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="font-bold mb-2">Ongoing Support</h3>
+                                    <p>vCISO services and compliance monitoring</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                                <h4 class="font-bold mb-2 flex items-center">
+                                    <i class="fas fa-exclamation-circle mr-2 text-blue-500"></i>
+                                    Don't Risk Compliance Failure
+                                </h4>
+                                <p class="mb-2">Contact us today for a free consultation and SOC 2 readiness assessment.</p>
+    <a href="contact.html" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300 inline-block">
+        Schedule Consultation
+    </a>
+                            </div>
+
+                            <button onclick="toggleArticle('article1')" class="text-blue-500 hover:text-blue-700 font-semibold mt-4">
+                                Close Article
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zero Trust Security -->
+                <div class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-4">
+                            <span class="mr-4"><i class="far fa-calendar-alt mr-2"></i> March 8, 2025</span>
+                            <span><i class="far fa-clock mr-2"></i> 8 min read</span>
+                        </div>
+                        <h1 class="text-3xl font-bold mb-3">Beyond the Firewall: Implementing a Zero Trust Security Model</h1>
+                        <div class="mb-4">
+                            <span class="blog-tag">Zero Trust</span>
+                            <span class="blog-tag">Security Architecture</span>
+                            <span class="blog-tag">Network Security</span>
+                            <span class="blog-tag">Compliance</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">For decades, the dominant approach to network security has been the "castle-and-moat" model: build a strong perimeter (the firewall) to keep the bad guys out. But in today's world of cloud computing, mobile devices, and remote work, the perimeter has become increasingly blurred, and this traditional approach is no longer sufficient. Enter Zero Trust.</p>
+                        <p class="text-gray-600 mb-4">Zero Trust is a security framework built on the principle of "never trust, always verify." It assumes that no user or device, whether inside or outside the network, should be automatically trusted. Instead, every access request must be verified based on identity, context, and the least privilege principle. This post explains the core concepts of Zero Trust and how Broadway Network Solutions can help you implement it effectively.</p>
+                        <button onclick="toggleArticle('article9')" class="text-blue-500 hover:text-blue-700 font-semibold inline-flex items-center cursor-pointer">
+                            Read More <i class="fas fa-arrow-down ml-2" aria-hidden="true"></i>
+                        </button>
+                        <div id="article9" class="hidden mt-4 article-content">
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Why the Traditional Perimeter is No Longer Enough</h2>
+                            <p class="mb-4">The traditional perimeter-based security model worked well when most applications and data resided within a company's own data center, and employees primarily worked from the office. But today:</p>
+                            <ul class="list-disc list-inside mb-4 pl-4 bg-gray-50 p-4 rounded-lg">
+                                <li class="mb-2"><strong>Cloud Adoption:</strong> Businesses are increasingly moving their applications and data to the cloud (AWS, Azure, GCP), which means they're no longer within the traditional network perimeter</li>
+                                <li class="mb-2"><strong>Remote Work:</strong> Employees access company resources from various locations and devices outside the corporate network</li>
+                                <li class="mb-2"><strong>Mobile Devices:</strong> Increased use of smartphones and tablets elevates device compromise risks</li>
+                                <li class="mb-2"><strong>Sophisticated Attacks:</strong> Phishing, social engineering, and credential stuffing bypass traditional defenses</li>
+                                <li class="mb-2"><strong>Insider Threats:</strong> Malicious or negligent insiders can bypass perimeter security entirely</li>
+                            </ul>
+
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Core Principles of Zero Trust</h2>
+                            <div class="grid md:grid-cols-2 gap-6 mb-4">
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600">1. Verify Explicitly</h3>
+                                    <p>Authenticate and authorize based on identity, location, device health, and other contextual factors</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600">2. Least Privilege Access</h3>
+                                    <p>Grant minimum permissions needed for specific tasks</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600">3. Assume Breach</h3>
+                                    <p>Design security controls with the assumption attackers are already inside</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600">4. Microsegmentation</h3>
+                                    <p>Divide networks into isolated zones to limit lateral movement</p>
+                                </div>
+                            </div>
+
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Implementation Roadmap</h2>
+                            <div class="space-y-8">
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600">Phase 1: Assessment & Planning</h3>
+                                    <ul class="list-disc list-inside pl-4">
+                                        <li class="mb-2">Current architecture analysis</li>
+                                        <li class="mb-2">Sensitive data identification</li>
+                                        <li class="mb-2">Workflow mapping</li>
+                                    </ul>
+                                </div>
+
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600">Phase 2: Core Implementation</h3>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Identity Management</h4>
+                                            <p>Multi-factor authentication, SSO, and identity governance</p>
+                                        </div>
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Network Segmentation</h4>
+                                            <p>Software-defined perimeters and microsegmentation</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600">Phase 3: Continuous Monitoring</h3>
+                                    <ul class="list-disc list-inside pl-4">
+                                        <li class="mb-2">Behavioral analytics</li>
+                                        <li class="mb-2">Automated policy enforcement</li>
+                                        <li class="mb-2">Real-time threat detection</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Why Choose Broadway Network Solutions?</h2>
+                            <div class="grid md:grid-cols-2 gap-6 mb-4">
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="font-bold mb-2">Architecture Design</h3>
+                                    <p>Custom Zero Trust blueprints aligned to your infrastructure</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="font-bold mb-2">Technology Integration</h3>
+                                    <p>Vendor-neutral implementation of best-in-class solutions</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="font-bold mb-2">Compliance Alignment</h3>
+                                    <p>Map controls to SOC 2, ISO 27001, and NIST frameworks</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="font-bold mb-2">Ongoing Management</h3>
+                                    <p>24/7 monitoring and policy optimization</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                                <h4 class="font-bold mb-2 flex items-center">
+                                    <i class="fas fa-shield-alt mr-2 text-blue-500"></i>
+                                    Ready for Zero Trust?
+                                </h4>
+                                <p class="mb-4">Contact us for a free Zero Trust maturity assessment and implementation plan.</p>
+    <a href="contact.html" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300 inline-block">
+        Schedule Consultation
+    </a>
+                            </div>
+
+                            <button onclick="toggleArticle('article9')" class="text-blue-500 hover:text-blue-700 font-semibold mt-4">
+                                Close Article
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ISO 27001 Certification -->
+                <div class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-4">
+                            <span class="mr-4"><i class="far fa-calendar-alt mr-2"></i> March 5, 2025</span>
+                            <span><i class="far fa-clock mr-2"></i> 10 min read</span>
+                        </div>
+                        <h1 class="text-3xl font-bold mb-3">ISO 27001 Certification: Your Step-by-Step Guide</h1>
+                        <div class="mb-4">
+                            <span class="blog-tag">ISO 27001</span>
+                            <span class="blog-tag">Compliance</span>
+                            <span class="blog-tag">Audit</span>
+                            <span class="blog-tag">Risk Management</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">In today's digital landscape, protecting sensitive information is paramount. Whether you're a mid-sized business in a regulated industry or a growing company looking to build trust with clients and partners, ISO 27001 certification can be a game-changer. It's an internationally recognized standard for information security management, demonstrating your commitment to protecting your data and the data of your stakeholders.</p>
+                        <p class="text-gray-600 mb-4">This guide breaks down the process into manageable steps, providing a clear roadmap and highlighting how Broadway Network Solutions can help you navigate the journey successfully. We'll go beyond the theory and offer practical advice, focusing on actionable solutions, not just compliance checklists.</p>
+                        <button onclick="toggleArticle('article2')" class="text-blue-500 hover:text-blue-700 font-semibold inline-flex items-center cursor-pointer">
+                            Read More <i class="fas fa-arrow-down ml-2" aria-hidden="true"></i>
+                        </button>
+                        <div id="article2" class="hidden mt-4 article-content">
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">What is ISO 27001?</h2>
+                            <p class="mb-4">ISO 27001 is an international standard that specifies the requirements for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS). An ISMS is a systematic approach to managing sensitive company information so that it remains secure. It includes people, processes, and IT systems by applying a risk management process.</p>
+
+                            <h3 class="text-xl font-bold mb-4 text-blue-600">Key Concepts of ISO 27001</h3>
+                            <div class="grid md:grid-cols-2 gap-6 mb-4">
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Information Security Management System (ISMS)</h4>
+                                    <p>Framework of policies, procedures, and controls designed to manage information security risks</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Risk Management</h4>
+                                    <p>Identify, assess, and treat information security risks specific to your organization</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Annex A Controls</h4>
+                                    <p>114 security controls across 14 categories - implement based on risk assessment</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Continual Improvement</h4>
+                                    <p>Ongoing monitoring and enhancement of your ISMS</p>
+                                </div>
+                            </div>
+
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Why Pursue ISO 27001 Certification?</h2>
+                            <div class="grid md:grid-cols-2 gap-6 mb-4">
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Enhanced Security</h4>
+                                    <p>Reduce risk of data breaches by 60%+ through systematic controls</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Regulatory Compliance</h4>
+                                    <p>Meets GDPR, HIPAA, PIPEDA and industry-specific requirements</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Competitive Advantage</h4>
+                                    <p>83% of enterprises require ISO 27001 for vendor partnerships</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Operational Efficiency</h4>
+                                    <p>Streamline security processes with documented procedures</p>
+                                </div>
+                            </div>
+
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">4-Phase Implementation Roadmap</h2>
+                            <div class="space-y-8">
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                                        <i class="fas fa-search mr-2"></i>
+                                        Phase 1: Scope Definition & Assessment (4-6 Weeks)
+                                    </h3>
+                                    <ul class="list-disc list-inside pl-4">
+                                        <li class="mb-2">Define ISMS scope covering critical assets and processes</li>
+                                        <li class="mb-2">Comprehensive risk assessment with threat modeling</li>
+                                        <li class="mb-2">Gap analysis against 114 Annex A controls</li>
+                                        <li class="mb-2">Business impact analysis for critical systems</li>
+                                    </ul>
+                                </div>
+
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                                        <i class="fas fa-file-alt mr-2"></i>
+                                        Phase 2: ISMS Design & Documentation
+                                    </h3>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Policies</h4>
+                                            <ul class="list-disc list-inside">
+                                                <li>Access Control</li>
+                                                <li>Asset Management</li>
+                                                <li>Incident Response</li>
+                                            </ul>
+                                        </div>
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Procedures</h4>
+                                            <ul class="list-disc list-inside">
+                                                <li>Risk Treatment Plan</li>
+                                                <li>Statement of Applicability</li>
+                                                <li>Continuous Monitoring</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                                        <i class="fas fa-shield-alt mr-2"></i>
+                                        Phase 3: Implementation & Training
+                                    </h3>
+                                    <ul class="list-disc list-inside pl-4">
+                                        <li class="mb-2">Security control implementation support</li>
+                                        <li class="mb-2">Employee awareness training programs</li>
+                                        <li class="mb-2">Internal audit preparation workshops</li>
+                                        <li class="mb-2">Vendor security assessments</li>
+                                    </ul>
+                                </div>
+
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                                        <i class="fas fa-check-double mr-2"></i>
+                                        Phase 4: Certification & Beyond
+                                    </h3>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Stage 1 Audit</h4>
+                                            <p>Documentation review and readiness assessment</p>
+                                        </div>
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Stage 2 Audit</h4>
+                                            <p>On-site implementation verification</p>
+                                        </div>
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Continuous Improvement</h4>
+                                            <p>Monthly monitoring and annual surveillance audits</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Why Choose Broadway Network Solutions?</h2>
+                            <div class="grid md:grid-cols-2 gap-6 mb-4">
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="font-bold mb-2">15+ Years Expertise</h3>
+                                    <p>CISSP, CISA, ISO 27001 Lead Auditor certified team</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="font-bold mb-2">End-to-End Support</h3>
+                                    <p>From scoping to post-certification maintenance</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="font-bold mb-2">95% Success Rate</h3>
+                                    <p>First-time certification achievement rate</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="font-bold mb-2">Technology Integration</h3>
+                                    <p>SIEM, GRC tools, and automation support</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                                <h4 class="font-bold mb-2 flex items-center">
+                                    <i class="fas fa-exclamation-circle mr-2 text-blue-500"></i>
+                                    Start Your ISO 27001 Journey Today
+                                </h4>
+                                <p class="mb-2">Contact us for a free gap analysis and implementation roadmap.</p>
+    <a href="contact.html" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300 inline-block">
+        Schedule Consultation
+    </a>
+                            </div>
+
+                            <button onclick="toggleArticle('article2')" class="text-blue-500 hover:text-blue-700 font-semibold mt-4">
+                                Close Article
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OSFI Guidelines -->
+                <div class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-4">
+                            <span class="mr-4"><i class="far fa-calendar-alt mr-2"></i> March 15, 2025</span>
+                            <span><i class="far fa-clock mr-2"></i> 10 min read</span>
+                        </div>
+                        <h1 class="text-3xl font-bold mb-3">Demystifying OSFI Guidelines: Cybersecurity Compliance for Financial Institutions</h1>
+                        <div class="mb-4">
+                            <span class="blog-tag">OSFI Compliance</span>
+                            <span class="blog-tag">Financial Services</span>
+                            <span class="blog-tag">Risk Management</span>
+                            <span class="blog-tag">Regulatory Audit</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">For Canadian financial institutions, navigating the regulatory landscape can be complex. The Office of the Superintendent of Financial Institutions (OSFI) sets out stringent guidelines to ensure the safety and soundness of the financial system, and cybersecurity is a critical component of these regulations. If you're a credit union, bank, insurance company, or other federally regulated financial institution (FRFI), understanding and complying with OSFI's cybersecurity expectations is not optional – it's essential.</p>
+                        <p class="text-gray-600 mb-4">This post breaks down the key OSFI guidelines related to cybersecurity, explaining them in plain language and providing practical advice on how to achieve compliance. We'll also show how Broadway Network Solutions can help you navigate these complexities and build a robust, OSFI-compliant security posture.</p>
+                        <button onclick="toggleArticle('article3')" class="text-blue-500 hover:text-blue-700 font-semibold inline-flex items-center cursor-pointer">
+                            Read More <i class="fas fa-arrow-down ml-2" aria-hidden="true"></i>
+                        </button>
+                        <div id="article3" class="hidden mt-4 article-content">
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Why OSFI Cybersecurity Guidelines Matter</h2>
+                            <p class="mb-4">OSFI's mandate is to protect the interests of depositors, policyholders, and creditors of financial institutions. In today's digital age, this means ensuring that financial institutions have strong cybersecurity defenses in place to protect against data breaches, ransomware attacks, and other cyber threats. Failure to comply with OSFI guidelines can result in:</p>
+                            <div class="grid md:grid-cols-2 gap-6 mb-4">
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Financial Penalties</h4>
+                                    <p>OSFI has the authority to impose significant fines for non-compliance</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Reputational Damage</h4>
+                                    <p>A security breach can severely damage your institution's reputation</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Operational Disruptions</h4>
+                                    <p>Cyberattacks can lead to service outages and financial losses</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Regulatory Scrutiny</h4>
+                                    <p>Non-compliance triggers increased oversight and audits</p>
+                                </div>
+                            </div>
+
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Key OSFI Guidelines & Advisories</h2>
+                            <div class="space-y-8">
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                                        <i class="fas fa-file-contract mr-2"></i>
+                                        Guideline B-10: Outsourcing Risk Management
+                                    </h3>
+                                    <ul class="list-disc list-inside pl-4">
+                                        <li class="mb-2">Cloud service provider due diligence</li>
+                                        <li class="mb-2">Third-party incident response coordination</li>
+                                        <li class="mb-2">Business continuity requirements</li>
+                                    </ul>
+                                </div>
+
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                                        <i class="fas fa-shield-alt mr-2"></i>
+                                        Guideline B-13: Cyber Risk Management
+                                    </h3>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Governance</h4>
+                                            <p>Board-level accountability and oversight</p>
+                                        </div>
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Controls</h4>
+                                            <p>Implementing NIST CSF aligned security measures</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                                        <i class="fas fa-exclamation-triangle mr-2"></i>
+                                        Incident Reporting Advisory
+                                    </h3>
+                                    <ul class="list-disc list-inside pl-4">
+                                        <li class="mb-2">72-hour breach notification requirement</li>
+                                        <li class="mb-2">Detailed impact assessment reporting</li>
+                                        <li class="mb-2">Ongoing status updates during incidents</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">7-Step Compliance Roadmap</h2>
+                            <div class="space-y-6">
+                                <div class="p-4 bg-blue-50 rounded-lg">
+                                    <h3 class="font-bold mb-2">1. Regulatory Gap Analysis</h3>
+                                    <p>Comprehensive assessment against OSFI B-10, B-13, E-21</p>
+                                </div>
+                                <div class="p-4 bg-blue-50 rounded-lg">
+                                    <h3 class="font-bold mb-2">2. Risk Framework Development</h3>
+                                    <p>Enterprise-wide risk assessment methodology</p>
+                                </div>
+                                <div class="p-4 bg-blue-50 rounded-lg">
+                                    <h3 class="font-bold mb-2">3. Control Implementation</h3>
+                                    <p>Prioritized security controls deployment</p>
+                                </div>
+                                <div class="p-4 bg-blue-50 rounded-lg">
+                                    <h3 class="font-bold mb-2">4. Third-Party Management</h3>
+                                    <p>Vendor risk assessment program development</p>
+                                </div>
+                                <div class="p-4 bg-blue-50 rounded-lg">
+                                    <h3 class="font-bold mb-2">5. Incident Preparedness</h3>
+                                    <p>Tabletop exercises and response plan testing</p>
+                                </div>
+                                <div class="p-4 bg-blue-50 rounded-lg">
+                                    <h3 class="font-bold mb-2">6. Staff Training</h3>
+                                    <p>Cybersecurity awareness programs for all levels</p>
+                                </div>
+                                <div class="p-4 bg-blue-50 rounded-lg">
+                                    <h3 class="font-bold mb-2">7. Continuous Monitoring</h3>
+                                    <p>Automated compliance tracking and reporting</p>
+                                </div>
+                            </div>
+
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Why Choose Broadway Network Solutions?</h2>
+                            <div class="grid md:grid-cols-2 gap-6 mb-4">
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="font-bold mb-2">15+ Years Expertise</h3>
+                                    <p>CISSP, CISA, OSCP certified professionals</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="font-bold mb-2">OSFI Specialists</h3>
+                                    <p>Deep understanding of financial regulations</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="font-bold mb-2">End-to-End Support</h3>
+                                    <p>From assessment to audit preparation</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h3 class="font-bold mb-2">Technology Integration</h3>
+                                    <p>GRC platform implementation and management</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                                <h4 class="font-bold mb-2 flex items-center">
+                                    <i class="fas fa-handshake mr-2 text-blue-500"></i>
+                                    Start Your OSFI Compliance Journey
+                                </h4>
+                                <p class="mb-2">Contact us for a free initial consultation and gap analysis.</p>
+    <a href="contact.html" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300 inline-block">
+        Schedule Consultation
+    </a>
+                            </div>
+
+                            <button onclick="toggleArticle('article3')" class="text-blue-500 hover:text-blue-700 font-semibold mt-4">
+                                Close Article
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Choosing the Right Audit Firm -->
+                <div class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-4">
+                            <span class="mr-4"><i class="far fa-calendar-alt mr-2"></i> March 18, 2025</span>
+                            <span><i class="far fa-clock mr-2"></i> 10 min read</span>
+                        </div>
+                        <h1 class="text-3xl font-bold mb-3">Choosing the Right Audit Firm for SOC 2, ISO 27001, and Beyond</h1>
+                        <div class="mb-4">
+                            <span class="blog-tag">SOC 2</span>
+                            <span class="blog-tag">ISO 27001</span>
+                            <span class="blog-tag">Compliance</span>
+                            <span class="blog-tag">Audit</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">You've invested time and effort in preparing for a SOC 2, ISO 27001, or other compliance audit. You've assessed your risks, implemented controls, and documented your processes. Now comes a crucial step: selecting the right audit firm. Choosing the wrong auditor can lead to delays, increased costs, frustration, and even audit failure.</p>
+                        <p class="text-gray-600 mb-4">This guide provides practical advice on how to select a qualified, reputable, and appropriate audit firm for your specific needs. We'll cover key factors to consider, questions to ask, and red flags to watch out for. Remember, while Broadway Network Solutions is not an audit firm, we are experts in audit preparation and have established partnerships with accredited auditors. We can help you navigate this process and ensure a smooth and successful audit experience.</p>
+                        <button onclick="toggleArticle('article4')" class="text-blue-500 hover:text-blue-700 font-semibold inline-flex items-center cursor-pointer">
+                            Read More <i class="fas fa-arrow-down ml-2" aria-hidden="true"></i>
+                        </button>
+                        <div id="article4" class="hidden mt-4 article-content">
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Why Auditor Selection Matters</h2>
+                            <p class="mb-4">Your auditor is more than just a "rubber stamp." They are a critical partner in your compliance journey. A good auditor will:</p>
+                            <ul class="list-disc list-inside mb-4 pl-4 bg-gray-50 p-4 rounded-lg">
+                                <li class="mb-2">Provide Objective Assurance: They will independently assess your controls and provide an unbiased opinion on whether you meet the relevant standards</li>
+                                <li class="mb-2">Identify Weaknesses: A thorough audit can uncover weaknesses in your security posture that you might have missed</li>
+                                <li class="mb-2">Offer Guidance (within limits): While auditors can't provide consulting services (to maintain independence), a good auditor can offer helpful insights and suggestions based on their experience</li>
+                                <li class="mb-2">Build Trust: A successful audit from a reputable firm enhances your credibility with clients, partners, and regulators</li>
+                            </ul>
+
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Key Factors to Consider When Choosing an Audit Firm</h2>
+                            <div class="space-y-8">
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600">1. Accreditation and Certification</h3>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">SOC 2</h4>
+                                            <p>Ensure the firm is a licensed CPA firm and that the auditors performing the engagement are Certified Public Accountants (CPAs). The AICPA sets the standards for SOC 2 audits.</p>
+                                        </div>
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">ISO 27001</h4>
+                                            <p>Look for firms accredited by recognized bodies like ANAB, UKAS, or SCC. The certification body should be accredited to ISO/IEC 17021-1.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600">2. Experience and Expertise</h3>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Industry Experience</h4>
+                                            <p>Does the firm have experience auditing businesses in your industry? Regulated industries have unique requirements.</p>
+                                        </div>
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Technical Expertise</h4>
+                                            <p>Do they have auditors with expertise relevant to your environment (cloud security, network security, etc.)?</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600">3. Reputation and References</h3>
+                                    <ul class="list-disc list-inside pl-4">
+                                        <li class="mb-2">Check online reviews and testimonials</li>
+                                        <li class="mb-2">Ask for references from clients in similar industries</li>
+                                        <li class="mb-2">Verify participation in peer review programs</li>
+                                    </ul>
+                                </div>
+
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600">4. Communication and Approach</h3>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Responsiveness</h4>
+                                            <p>How quickly do they respond to inquiries?</p>
+                                        </div>
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Methodology</h4>
+                                            <p>Do they use a risk-based approach? How do they gather evidence?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Questions to Ask Potential Audit Firms</h2>
+                            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Experience</h4>
+                                    <ul class="list-disc list-inside">
+                                        <li>How many SOC 2/ISO 27001 audits have you conducted this year?</li>
+                                        <li>What's your experience with businesses in our industry?</li>
+                                    </ul>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Process</h4>
+                                    <ul class="list-disc list-inside">
+                                        <li>What is your audit methodology?</li>
+                                        <li>What's included in your fees?</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Red Flags to Watch Out For</h2>
+                            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                <div class="p-4 border rounded-lg bg-red-50">
+                                    <h4 class="font-bold mb-2 text-red-600">🚩 Lack of Accreditation</h4>
+                                    <p>Avoid firms not properly accredited for the standards you need</p>
+                                </div>
+                                <div class="p-4 border rounded-lg bg-red-50">
+                                    <h4 class="font-bold mb-2 text-red-600">🚩 "Guaranteed" Certification</h4>
+                                    <p>No reputable firm can guarantee certification outcomes</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                                <h4 class="font-bold mb-2 flex items-center">
+                                    <i class="fas fa-handshake mr-2 text-blue-500"></i>
+                                    How We Can Help
+                                </h4>
+                                <p class="mb-4">While Broadway Network Solutions is not an audit firm, we provide:</p>
+                                <ul class="list-disc list-inside pl-4">
+                                    <li class="mb-2">Auditor selection guidance</li>
+                                    <li class="mb-2">Audit preparation support</li>
+                                    <li class="mb-2">Post-audit implementation help</li>
+                                </ul>
+    <a href="contact.html" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300 mt-4 inline-block">
+        Schedule Consultation
+    </a>
+                            </div>
+
+                            <button onclick="toggleArticle('article4')" class="text-blue-500 hover:text-blue-700 font-semibold mt-4">
+                                Close Article
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vulnerability Management -->
+                <div class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-4">
+                            <span class="mr-4"><i class="far fa-calendar-alt mr-2"></i> March 25, 2025</span>
+                            <span><i class="far fa-clock mr-2"></i> 12 min read</span>
+                        </div>
+                        <h1 class="text-3xl font-bold mb-3">Vulnerability Management: Proactive Protection, Not Just Patching</h1>
+                        <div class="mb-4">
+                            <span class="blog-tag">Vulnerability Management</span>
+                            <span class="blog-tag">Best Practices</span>
+                            <span class="blog-tag">Risk Assessment</span>
+                            <span class="blog-tag">Compliance</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">In today's threat landscape, vulnerabilities in your systems and applications are like open doors for attackers. Every day, new vulnerabilities are discovered, and cybercriminals are constantly searching for ways to exploit them. A robust vulnerability management program is no longer optional – it's essential for protecting your business from data breaches, ransomware attacks, and other cyber threats.</p>
+                        <p class="text-gray-600 mb-4">But vulnerability management is more than just running a scan and applying patches. It's a continuous, strategic process that involves identifying, assessing, prioritizing, remediating, and verifying vulnerabilities across your entire IT environment. This post explains the key components of an effective vulnerability management program and how Broadway Network Solutions can help you implement one.</p>
+                        <button onclick="toggleArticle('article5')" class="text-blue-500 hover:text-blue-700 font-semibold inline-flex items-center cursor-pointer">
+                            Read More <i class="fas fa-arrow-down ml-2" aria-hidden="true"></i>
+                        </button>
+                        <div id="article5" class="hidden mt-4 article-content">
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">What is Vulnerability Management?</h2>
+                            <p class="mb-4">Vulnerability management is the cyclical practice of identifying, classifying, prioritizing, remediating, and mitigating software vulnerabilities. It's a proactive approach to security that aims to find and fix weaknesses before attackers can exploit them.</p>
+
+                            <h3 class="text-xl font-bold mb-4 text-blue-600">Key Components of a Vulnerability Management Program</h3>
+                            <div class="grid md:grid-cols-2 gap-6 mb-4">
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">1. Asset Discovery</h4>
+                                    <p>Comprehensive inventory of all IT assets including servers, network devices, cloud services, applications, and IoT devices</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">2. Vulnerability Scanning</h4>
+                                    <p>Regular scans using automated tools combined with manual verification</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">3. Risk Analysis</h4>
+                                    <p>Contextual assessment of exploitability, impact, and asset criticality</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">4. Remediation</h4>
+                                    <p>Patching, configuration changes, workarounds, and compensating controls</p>
+                                </div>
+                            </div>
+
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">The Broadway Network Solutions Approach</h2>
+                            <div class="space-y-8">
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                                        <i class="fas fa-search mr-2"></i>
+                                        Comprehensive Assessments
+                                    </h3>
+                                    <ul class="list-disc list-inside pl-4">
+                                        <li class="mb-2">Automated scanning combined with manual penetration testing</li>
+                                        <li class="mb-2">Cloud environment configuration audits</li>
+                                        <li class="mb-2">Third-party vendor risk assessments</li>
+                                    </ul>
+                                </div>
+
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                                        <i class="fas fa-chart-pie mr-2"></i>
+                                        Risk Prioritization
+                                    </h3>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Criticality Scoring</h4>
+                                            <p>Custom risk scoring matrix based on your business context</p>
+                                        </div>
+                                        <div class="p-4 border rounded-lg">
+                                            <h4 class="font-bold mb-2">Remediation Planning</h4>
+                                            <p>Phased remediation roadmap aligned with business priorities</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-6 bg-gray-50 rounded-lg">
+                                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                                        <i class="fas fa-shield-alt mr-2"></i>
+                                        Ongoing Management
+                                    </h3>
+                                    <ul class="list-disc list-inside pl-4">
+                                        <li class="mb-2">Continuous monitoring and alerting</li>
+                                        <li class="mb-2">Quarterly vulnerability review meetings</li>
+                                        <li class="mb-2">Compliance reporting dashboards</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Beyond Compliance: Building Security Resilience</h2>
+                            <div class="grid md:grid-cols-2 gap-6 mb-4">
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Threat Intelligence Integration</h4>
+                                    <p>Real-time vulnerability threat context from multiple feeds</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Automation Workflows</h4>
+                                    <p>Integration with ITSM tools for streamlined remediation</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Metrics & Reporting</h4>
+                                    <p>MTTR, vulnerability age, and risk reduction metrics</p>
+                                </div>
+                                <div class="p-4 border rounded-lg">
+                                    <h4 class="font-bold mb-2">Staff Training</h4>
+                                    <p>Secure coding and patching best practices workshops</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                                <h4 class="font-bold mb-2 flex items-center">
+                                    <i class="fas fa-exclamation-circle mr-2 text-blue-500"></i>
+                                    Ready to Strengthen Your Defenses?
+                                </h4>
+                                <p class="mb-4">Contact us for a free vulnerability management assessment and implementation plan.</p>
+                                <a href="contact.html" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300 inline-block">
+                                    Schedule Consultation
+                                </a>
+                            </div>
+
+                            <button onclick="toggleArticle('article5')" class="text-blue-500 hover:text-blue-700 font-semibold mt-4">
+                                Close Article
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+<div class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
+    <div class="p-6">
+        <div class="flex items-center text-sm text-gray-600 mb-4">
+            <span class="mr-4"><i class="far fa-calendar-alt mr-2"></i> March 22, 2025</span>
+            <span><i class="far fa-clock mr-2"></i> 10 min read</span>
+        </div>
+        <h1 class="text-3xl font-bold mb-3">Incident Response Planning: Your Roadmap to Resilience</h1>
+        <div class="mb-4">
+            <span class="blog-tag">Incident Response</span>
+            <span class="blog-tag">Security Planning</span>
+            <span class="blog-tag">Compliance</span>
+            <span class="blog-tag">Risk Management</span>
+        </div>
+        <p class="text-gray-600 mb-4">In today's cybersecurity landscape, it's not a question of if you'll experience a security incident, but when. Whether it's a ransomware attack, a data breach, a phishing scam, or a denial-of-service attack, incidents happen. And how you respond to those incidents can make all the difference between a minor disruption and a major catastrophe.</p>
+        <p class="text-gray-600 mb-4">That's why having a well-defined, documented, and tested incident response plan (IRP) is absolutely critical. An IRP is your roadmap for handling security incidents effectively, minimizing damage, restoring operations quickly, and meeting your legal and regulatory obligations. This post explains the key components of an effective IRP and how Broadway Network Solutions can help you develop and implement one.</p>
+        <button onclick="toggleArticle('article7')" class="text-blue-500 hover:text-blue-700 font-semibold inline-flex items-center cursor-pointer">
+            Read More <i class="fas fa-arrow-down ml-2" aria-hidden="true"></i>
+        </button>
+        <div id="article7" class="hidden mt-4 article-content">
+            <h2 class="text-2xl font-bold mb-6 border-b pb-2">What is an Incident Response Plan (IRP)?</h2>
+            <p class="mb-4">An IRP is a documented set of procedures that outlines how your organization will respond to and recover from security incidents. It's not just a technical document; it's a business document that involves people, processes, and technology. A good IRP should:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 bg-gray-50 p-4 rounded-lg">
+                <li class="mb-2"><strong>Define Roles and Responsibilities:</strong> Clearly identify who is responsible for what during an incident.</li>
+                <li class="mb-2"><strong>Establish Communication Procedures:</strong> Outline how information will be shared internally and externally (with clients, partners, law enforcement, regulators).</li>
+                <li class="mb-2"><strong>Provide Step-by-Step Instructions:</strong> Detail the actions to be taken during each phase of the incident response process.</li>
+                <li class="mb-2"><strong>Be Regularly Reviewed and Updated:</strong> An IRP is a living document that should be reviewed and updated at least annually, or more frequently as needed.</li>
+                <li class="mb-2"><strong>Be Tested:</strong> A plan that hasn't been tested is just a theory. Regular testing is crucial to ensure the plan works in practice.</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mb-6 border-b pb-2">The Six Phases of Incident Response (NIST Framework)</h2>
+            <p class="mb-4">The National Institute of Standards and Technology (NIST) Cybersecurity Framework outlines a widely accepted six-phase approach to incident response:</p>
+            <div class="space-y-8">
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-tools mr-2"></i>
+                        1. Preparation
+                    </h3>
+                    <p class="mb-4">This is the foundation of effective incident response. It involves:</p>
+                    <ul class="list-disc list-inside pl-4">
+                        <li class="mb-2">Developing and documenting the IRP.</li>
+                        <li class="mb-2">Establishing an incident response team (IRT).</li>
+                        <li class="mb-2">Providing training to the IRT and other relevant personnel.</li>
+                        <li class="mb-2">Implementing security controls to prevent incidents (e.g., firewalls, intrusion detection, vulnerability management).</li>
+                        <li class="mb-2">Establishing communication channels and procedures.</li>
+                        <li class="mb-2">Procuring necessary tools and resources.</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-search mr-2"></i>
+                        2. Identification
+                    </h3>
+                    <p class="mb-4">This is the phase where you detect and confirm that a security incident has occurred. This might involve:</p>
+                    <ul class="list-disc list-inside pl-4">
+                        <li class="mb-2">Monitoring security logs and alerts.</li>
+                        <li class="mb-2">Analyzing network traffic.</li>
+                        <li class="mb-2">Receiving reports from users or third parties.</li>
+                        <li class="mb-2">Identifying the type, scope, and severity of the incident.</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-shield-alt mr-2"></i>
+                        3. Containment
+                    </h3>
+                    <p class="mb-4">Once an incident has been identified, the goal is to contain it as quickly as possible to prevent further damage. This might involve:</p>
+                    <ul class="list-disc list-inside pl-4">
+                        <li class="mb-2">Isolating affected systems or networks.</li>
+                        <li class="mb-2">Disabling compromised accounts.</li>
+                        <li class="mb-2">Blocking malicious traffic.</li>
+                        <li class="mb-2">Preserving evidence.</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-trash-alt mr-2"></i>
+                        4. Eradication
+                    </h3>
+                    <p class="mb-4">This is the phase where you remove the root cause of the incident. This might involve:</p>
+                    <ul class="list-disc list-inside pl-4">
+                        <li class="mb-2">Removing malware.</li>
+                        <li class="mb-2">Patching vulnerabilities.</li>
+                        <li class="mb-2">Rebuilding compromised systems.</li>
+                        <li class="mb-2">Restoring data from backups.</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-sync-alt mr-2"></i>
+                        5. Recovery
+                    </h3>
+                    <p class="mb-4">This is the phase where you restore normal operations. This might involve:</p>
+                    <ul class="list-disc list-inside pl-4">
+                        <li class="mb-2">Bringing systems back online.</li>
+                        <li class="mb-2">Testing restored systems.</li>
+                        <li class="mb-2">Monitoring for any signs of recurrence.</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-clipboard-list mr-2"></i>
+                        6. Lessons Learned (Post-Incident Activity)
+                    </h3>
+                    <p class="mb-4">This is a critical phase that is often overlooked. After an incident has been resolved, you should conduct a thorough review to:</p>
+                    <ul class="list-disc list-inside pl-4">
+                        <li class="mb-2">Identify what happened and why.</li>
+                        <li class="mb-2">Evaluate the effectiveness of your IRP.</li>
+                        <li class="mb-2">Identify any areas for improvement.</li>
+                        <li class="mb-2">Update the IRP and other security controls as needed.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold mb-6 border-b pb-2">The Broadway Network Solutions Approach to Incident Response Planning</h2>
+            <div class="grid md:grid-cols-2 gap-6 mb-4">
+                <div class="p-4 border rounded-lg">
+                    <h3 class="font-bold mb-2">IRP Development</h3>
+                    <p>We work with you to create a customized IRP that addresses your specific risks and resources.</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h3 class="font-bold mb-2">Tabletop Exercises</h3>
+                    <p>We facilitate tabletop exercises to simulate security incidents and test the effectiveness of your IRP.</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h3 class="font-bold mb-2">Incident Response Training</h3>
+                    <p>We provide training to your incident response team and other relevant personnel.</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h3 class="font-bold mb-2">vCISO Services</h3>
+                    <p>Our vCISO services include ongoing support for incident response planning and management.</p>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Beyond Compliance: Building Business Resilience</h2>
+            <p class="mb-4">While many compliance frameworks (SOC 2, ISO 27001, HIPAA, OSFI guidelines) require an IRP, the real value of incident response planning goes far beyond checking a box. A well-executed IRP can:</p>
+            <div class="grid md:grid-cols-2 gap-6 mb-4">
+                <div class="p-4 border rounded-lg">
+                    <h3 class="font-bold mb-2">Minimize Downtime</h3>
+                    <p>Reduce the time it takes to recover from a security incident.</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h3 class="font-bold mb-2">Reduce Financial Losses</h3>
+                    <p>Limit the financial impact of a breach.</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h3 class="font-bold mb-2">Protect Your Reputation</h3>
+                    <p>Demonstrate to your clients and partners that you take security seriously.</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h3 class="font-bold mb-2">Improve Your Overall Security Posture</h3>
+                    <p>The lessons learned from incidents can help you strengthen your defenses and prevent future incidents.</p>
+                </div>
+            </div>
+
+                            <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                                <h4 class="font-bold mb-2 flex items-center">
+                                    <i class="fas fa-exclamation-circle mr-2 text-blue-500"></i>
+                                    Don't Wait for an Incident to Happen – Be Prepared
+                                </h4>
+                                <p class="mb-4">Contact Broadway Network Solutions today for a free consultation. We'll discuss your specific needs, answer your questions, and help you develop an incident response plan that protects your business and builds resilience. Proactive planning is the key to surviving and thriving in today's threat landscape.</p>
+                                <a href="contact.html">
+                                    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300">
+                                        Schedule Consultation
+                                    </button>
+                                </a>
+                            </div>
+
+            <button onclick="toggleArticle('article7')" class="text-blue-500 hover:text-blue-700 font-semibold mt-4">
+                Close Article
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="blog-card bg-white rounded-lg shadow-lg overflow-hidden">
+    <div class="p-6">
+        <div class="flex items-center text-sm text-gray-600 mb-4">
+            <span class="mr-4"><i class="far fa-calendar-alt mr-2"></i> March 22, 2025</span>
+            <span><i class="far fa-clock mr-2"></i> 12 min read</span>
+        </div>
+        <h1 class="text-3xl font-bold mb-3">Cloud Security Best Practices for Regulated Industries</h1>
+        <div class="mb-4">
+            <span class="blog-tag">Cloud Security</span>
+            <span class="blog-tag">Compliance</span>
+            <span class="blog-tag">Financial Services</span>
+            <span class="blog-tag">Healthcare</span>
+        </div>
+        <p class="text-gray-600 mb-4">The cloud offers numerous benefits for businesses: scalability, flexibility, cost savings, and agility. But for organizations in regulated industries (finance, healthcare, government, etc.), moving to the cloud also introduces new security and compliance challenges. Data breaches, compliance violations, and service disruptions in the cloud can have severe consequences.</p>
+        <p class="text-gray-600 mb-4">This post outlines key cloud security best practices specifically tailored for regulated industries, helping you leverage the benefits of the cloud while maintaining a strong security posture and meeting your regulatory obligations. We'll also show how Broadway Network Solutions can help you navigate the complexities of cloud security and compliance.</p>
+        <button onclick="toggleArticle('article8')" class="text-blue-500 hover:text-blue-700 font-semibold inline-flex items-center cursor-pointer">
+            Read More <i class="fas fa-arrow-down ml-2" aria-hidden="true"></i>
+        </button>
+        <div id="article8" class="hidden mt-4 article-content">
+            <h2 class="text-2xl font-bold mb-6 border-b pb-2">The Shared Responsibility Model</h2>
+            <p class="mb-4">Before diving into specific best practices, it's crucial to understand the shared responsibility model that governs cloud security. In a nutshell:</p>
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="p-4 border rounded-lg bg-gray-50">
+                    <h4 class="font-bold mb-2">The Cloud Provider</h4>
+                    <p>AWS, Azure, GCP, etc. are responsible for the security <em>of</em> the cloud (the physical infrastructure, hardware, and software that powers the cloud services).</p>
+                </div>
+                <div class="p-4 border rounded-lg bg-gray-50">
+                    <h4 class="font-bold mb-2">You (the Customer)</h4>
+                    <p>Are responsible for security <em>in</em> the cloud (your data, applications, operating systems, and configurations).</p>
+                </div>
+            </div>
+            <p class="mb-6">This means that while the cloud provider provides a secure foundation, you are ultimately responsible for securing your own data and workloads in the cloud.</p>
+
+            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Key Cloud Security Best Practices for Regulated Industries</h2>
+            
+            <div class="space-y-8">
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-cloud mr-2"></i>
+                        1. Choose the Right Cloud Deployment Model
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="p-4 border rounded-lg">
+                            <h4 class="font-bold mb-2">Public Cloud</h4>
+                            <p>Services are offered over the public internet and shared among multiple customers.</p>
+                        </div>
+                        <div class="p-4 border rounded-lg">
+                            <h4 class="font-bold mb-2">Private Cloud</h4>
+                            <p>Infrastructure is dedicated to a single organization.</p>
+                        </div>
+                        <div class="p-4 border rounded-lg">
+                            <h4 class="font-bold mb-2">Hybrid Cloud</h4>
+                            <p>A combination of public and private cloud.</p>
+                        </div>
+                        <div class="p-4 border rounded-lg">
+                            <h4 class="font-bold mb-2">Community Cloud</h4>
+                            <p>Infrastructure is shared among several organizations with shared concerns (e.g., a group of financial institutions).</p>
+                        </div>
+                    </div>
+                    <p class="mt-4">Your choice will depend on your specific needs, risk tolerance, and regulatory requirements.</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-user-lock mr-2"></i>
+                        2. Implement Strong Identity and Access Management (IAM)
+                    </h3>
+                    <ul class="list-disc list-inside pl-4">
+                        <li class="mb-2"><strong>Least Privilege:</strong> Grant users and services only the minimum necessary access to perform their tasks.</li>
+                        <li class="mb-2"><strong>Multi-Factor Authentication (MFA):</strong> Require MFA for all users, especially those with administrative privileges.</li>
+                        <li class="mb-2"><strong>Role-Based Access Control (RBAC):</strong> Define roles with specific permissions and assign users to those roles.</li>
+                        <li class="mb-2"><strong>Regularly Review Access:</strong> Periodically review and update access permissions to ensure they remain appropriate.</li>
+                        <li class="mb-2"><strong>Federated Identity:</strong> If possible use this to authenticate users.</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-network-wired mr-2"></i>
+                        3. Secure Your Network
+                    </h3>
+                    <ul class="list-disc list-inside pl-4">
+                        <li class="mb-2"><strong>Virtual Private Cloud (VPC):</strong> Create isolated networks within the cloud provider's infrastructure.</li>
+                        <li class="mb-2"><strong>Network Segmentation:</strong> Divide your VPC into smaller subnets to limit the lateral movement of attackers.</li>
+                        <li class="mb-2"><strong>Security Groups and Network ACLs:</strong> Use these to control inbound and outbound traffic to your instances and subnets.</li>
+                        <li class="mb-2"><strong>Web Application Firewall (WAF):</strong> Protect your web applications from common attacks.</li>
+                        <li class="mb-2"><strong>DDoS Protection:</strong> Implement measures to mitigate Distributed Denial of Service (DDoS) attacks.</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-database mr-2"></i>
+                        4. Protect Your Data
+                    </h3>
+                    <ul class="list-disc list-inside pl-4">
+                        <li class="mb-2"><strong>Encryption at Rest:</strong> Encrypt your data stored in the cloud (e.g., data in databases, object storage, block storage).</li>
+                        <li class="mb-2"><strong>Encryption in Transit:</strong> Encrypt data as it travels between your on-premises environment and the cloud, and between different cloud services. Use HTTPS for all web traffic.</li>
+                        <li class="mb-2"><strong>Data Loss Prevention (DLP):</strong> Implement measures to prevent sensitive data from leaving your cloud environment.</li>
+                        <li class="mb-2"><strong>Data Backup and Recovery:</strong> Regularly back up your data and test your recovery procedures.</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-code mr-2"></i>
+                        5. Secure Your Applications
+                    </h3>
+                    <ul class="list-disc list-inside pl-4">
+                        <li class="mb-2"><strong>Secure Development Practices:</strong> Follow secure coding practices to prevent vulnerabilities in your applications.</li>
+                        <li class="mb-2"><strong>Web Application Security:</strong> Implement measures to protect your web applications from common attacks (e.g., SQL injection, cross-site scripting).</li>
+                        <li class="mb-2"><strong>Vulnerability Scanning and Penetration Testing:</strong> Regularly scan your applications for vulnerabilities and conduct penetration testing to identify weaknesses.</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-search mr-2"></i>
+                        6. Monitor and Log Everything
+                    </h3>
+                    <ul class="list-disc list-inside pl-4">
+                        <li class="mb-2"><strong>Cloud Native Logging:</strong> Use CloudTrail (AWS), Azure Monitor, Cloud Logging (GCP) to log all activity in your cloud environment.</li>
+                        <li class="mb-2"><strong>Security Information and Event Management (SIEM):</strong> Collect and analyze security logs to detect and respond to threats.</li>
+                        <li class="mb-2"><strong>Regularly Review Logs:</strong> Proactively review logs for suspicious activity.</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-clipboard-check mr-2"></i>
+                        7. Stay Compliant
+                    </h3>
+                    <ul class="list-disc list-inside pl-4">
+                        <li class="mb-2"><strong>Understand Your Regulatory Requirements:</strong> Identify the specific regulations that apply to your business (e.g., SOC 2, ISO 27001, HIPAA, GDPR, OSFI guidelines).</li>
+                        <li class="mb-2"><strong>Map Controls to Requirements:</strong> Map your cloud security controls to the requirements of the relevant regulations.</li>
+                        <li class="mb-2"><strong>Regularly Audit Your Compliance:</strong> Conduct regular audits to ensure you remain compliant.</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                        <i class="fas fa-hand-pointer mr-2"></i>
+                        8. Choose the Right Cloud Provider and Services
+                    </h3>
+                    <ul class="list-disc list-inside pl-4">
+                        <li class="mb-2"><strong>Shared Responsibility:</strong> Understand the shared responsibility model and your responsibilities.</li>
+                        <li class="mb-2"><strong>Compliance Certifications:</strong> Verify that the cloud provider and the specific services you use have the necessary compliance certifications (e.g., SOC 2, ISO 27001).</li>
+                        <li class="mb-2"><strong>Data Residency:</strong> Determine where your data will be stored and ensure it meets your compliance requirements.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold mb-6 mt-8 border-b pb-2">How Broadway Network Solutions Can Help</h2>
+            <p class="mb-4">Broadway Network Solutions has extensive experience helping businesses in regulated industries securely migrate to and operate in the cloud. We offer:</p>
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="p-4 border rounded-lg">
+                    <h4 class="font-bold mb-2">Cloud Security Assessments</h4>
+                    <p>We'll assess your current cloud security posture, identify vulnerabilities, and provide prioritized recommendations.</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h4 class="font-bold mb-2">Cloud Security Architecture Design</h4>
+                    <p>We'll help you design a secure cloud architecture that meets your specific needs and regulatory requirements.</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h4 class="font-bold mb-2">Cloud Security Implementation</h4>
+                    <p>We'll provide hands-on assistance with implementing security controls in your cloud environment.</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h4 class="font-bold mb-2">Compliance Support</h4>
+                    <p>We'll help you achieve and maintain compliance with relevant regulations.</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h4 class="font-bold mb-2">Vendor Neutrality</h4>
+                    <p>Unbiased recommendations.</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <h4 class="font-bold mb-2">Audit Preparation</h4>
+                    <p>We will get you ready for the audit, we do not provide audit service.</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 p-6 rounded-lg mb-6">
+                <h4 class="font-bold mb-3 flex items-center text-lg">
+                    <i class="fas fa-exclamation-circle mr-2 text-blue-500"></i>
+                    Don't Let Cloud Security Be an Afterthought
+                </h4>
+                <p class="mb-4">Migrating to the cloud can offer significant benefits, but it's crucial to prioritize security from the outset. By following these best practices and partnering with a trusted cybersecurity expert like Broadway Network Solutions, you can leverage the power of the cloud while maintaining a strong security posture and meeting your compliance obligations.</p>
+                <a href="contact.html">
+                    <button class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition duration-300 flex items-center">
+                        <i class="fas fa-calendar-check mr-2"></i> Schedule Consultation
+                    </button>
+                </a>
+            </div>
+
+            <button onclick="toggleArticle('article8')" class="text-blue-500 hover:text-blue-700 font-semibold mt-4">
+                Close Article
+            </button>
+        </div>
+    </div>
+</main>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12" aria-label="Footer">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">About Us</h4>
+                    <p class="text-gray-400">Delivering comprehensive cybersecurity solutions to protect your business in an evolving threat landscape.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2" aria-hidden="true"></i>
+                            <span>24/7 Support Available</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
+                            <span>info@broadwaysolutions.ca</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2" aria-hidden="true"></i>
+                            <span>Mississauga, Ontario, Canada</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Broadway Network Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Broadway Network Solutions Cybersecurity Blog",
+      "description": "Stay updated with the latest cybersecurity insights, trends, and best practices from Broadway Network Solutions' security experts.",
+      "url": "https://broadwaysolutions.ca/blog.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Broadway Network Solutions",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://broadwaysolutions.ca/images/logo.png"
+        }
+      }
+    }
+    </script>
+
+    <script>
+        function toggleArticle(articleId) {
+            const article = document.getElementById(articleId);
+            article.classList.toggle('hidden');
+            
+            const button = article.previousElementSibling;
+            const icon = button.querySelector('i');
+            icon.classList.toggle('fa-arrow-down');
+            icon.classList.toggle('fa-arrow-up');
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.getElementById('menuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            menuBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('show');
+            });
+
+            document.addEventListener('click', function(event) {
+                if (!mobileMenu.contains(event.target) && 
+                    !menuBtn.contains(event.target) && 
+                    mobileMenu.classList.contains('show')) {
+                    mobileMenu.classList.remove('show');
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+
+            const menuItems = mobileMenu.querySelectorAll('a');
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    mobileMenu.classList.remove('show');
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
