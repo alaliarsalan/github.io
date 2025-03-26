@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Services | Broadway Network Solutions</title>
+    <meta name="description" content="Explore our comprehensive cybersecurity services including vCISO, risk management, compliance, and technical security solutions tailored for your business needs.">
+    <meta name="keywords" content="cybersecurity services, vCISO, risk management, compliance, technical security, zero trust, cloud security, Broadway Network Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://broadwaysolutions.ca/services.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://broadwaysolutions.ca/services.html">
+    <meta property="og:title" content="Cybersecurity Services | Broadway Network Solutions">
+    <meta property="og:description" content="Comprehensive cybersecurity services including vCISO, risk management, compliance, and technical security solutions.">
+    <meta property="og:image" content="https://broadwaysolutions.ca/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://broadwaysolutions.ca/services.html">
+    <meta property="twitter:title" content="Cybersecurity Services | Broadway Network Solutions">
+    <meta property="twitter:description" content="Comprehensive cybersecurity services including vCISO, risk management, compliance, and technical security solutions.">
+    <meta property="twitter:image" content="https://broadwaysolutions.ca/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%); }
+        .nav-link { 
+            position: relative; 
+            padding: 1rem 0.5rem;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #3B82F6;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease-in-out;
+        }
+        .nav-link:hover::after { 
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        #mobileMenu {
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+        }
+        #mobileMenu.show {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+        #mobileMenu.hidden {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .service-section {
+            padding: 2rem 0;
+        }
+        .service-card {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .service-card {
+                padding: 1rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg fixed w-full z-10" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <i class="fas fa-shield-alt text-blue-500 text-2xl mr-2" aria-hidden="true"></i>
+                        <span class="font-bold text-xl">Broadway Network Solutions</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-blue-500 transition duration-300">Home</a>
+                    <a href="services.html" class="nav-link text-white hover:text-blue-500 transition duration-300">Services</a>
+                    <a href="blog.html" class="nav-link text-white hover:text-blue-500 transition duration-300">Blog</a>
+                    <a href="contact.html" class="nav-link text-white hover:text-blue-500 transition duration-300">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-4 text-white focus:outline-none" id="menuBtn" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-xl" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden bg-gray-800" id="mobileMenu">
+                <a href="index.html" class="block py-3 px-4 text-white hover:bg-gray-700">Home</a>
+                <a href="services.html" class="block py-3 px-4 text-white hover:bg-gray-700">Services</a>
+                <a href="blog.html" class="block py-3 px-4 text-white hover:bg-gray-700">Blog</a>
+                <a href="contact.html" class="block py-3 px-4 text-white hover:bg-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <section class="gradient-bg pt-24 pb-12 text-white" aria-label="Services header" itemscope itemtype="https://schema.org/WebPage">
+        <div class="max-w-7xl mx-auto px-4 py-16 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6" itemprop="headline">Our Services</h1>
+            <p class="text-xl max-w-3xl mx-auto" itemprop="description">Align cybersecurity initiatives with business goals through expert guidance. We help organizations build resilient security postures by identifying risks, prioritizing investments, and aligning strategies with regulatory requirements.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4">
+        <!-- Virtual CISO Services -->
+        <section id="vciso" class="service-section" itemscope itemtype="https://schema.org/Service">
+            <div class="bg-white rounded-lg shadow-lg service-card">
+                <h2 class="text-3xl font-bold mb-6" itemprop="name">Virtual CISO (vCISO) Services</h2>
+                <p class="text-gray-600 mb-6" itemprop="description">Executive cybersecurity leadership tailored to your budget and goals.</p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                    <div itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                        <h3 class="text-xl font-bold mb-4" itemprop="name">Strategic Governance</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">Oversight of security programs</span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">Policy development frameworks</span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">Accountability structure implementation</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                        <h3 class="text-xl font-bold mb-4" itemprop="name">Risk Prioritization</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">Security investment alignment</span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">Critical threat analysis</span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">Business objective mapping</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                        <h3 class="text-xl font-bold mb-4" itemprop="name">Compliance Roadmaps</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">SOC 2 & PCI DSS preparation</span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">GDPR/HIPAA compliance</span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">Regulatory gap analysis</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Risk Management Services -->
+        <section id="risk-management" class="service-section" itemscope itemtype="https://schema.org/Service">
+            <div class="bg-white rounded-lg shadow-lg service-card">
+                <h2 class="text-3xl font-bold mb-6" itemprop="name">Risk Management Services</h2>
+                <p class="text-gray-600 mb-6" itemprop="description">Proactively identify, prioritize, and mitigate risks across systems and workflows.</p>
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                        <h3 class="text-xl font-bold mb-4" itemprop="name">Risk Assessments</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">MITRE ATT&CK framework</span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">NIST CSF implementation</span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">Threat modeling</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                        <h3 class="text-xl font-bold mb-4" itemprop="name">Policy Development</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">IoT security frameworks</span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">Cloud governance policies</span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">Access control systems</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compliance Services -->
+        <section id="compliance" class="service-section" itemscope itemtype="https://schema.org/Service">
+            <div class="bg-white rounded-lg shadow-lg service-card">
+                <h2 class="text-3xl font-bold mb-6" itemprop="name">Compliance Services</h2>
+                <p class="text-gray-600 mb-6" itemprop="description">Structured approach to achieving and maintaining compliance with SOC 2, PCI DSS, HIPAA and other frameworks.</p>
+                
+                <h3 class="text-2xl font-bold mb-4">Compliance Readiness Process</h3>
+                <p class="text-gray-600 mb-6">Our proven 4-phase approach for SOC 2, PCI DSS and other compliance frameworks:</p>
+                <div class="grid md:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-blue-50 p-6 rounded-lg" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                        <div class="text-blue-500 font-bold text-xl mb-2">Phase 1</div>
+                        <h4 class="font-bold mb-2" itemprop="name">Assessment & Gap Analysis</h4>
+                        <ul class="space-y-2">
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">Stakeholder interviews</li>
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">Compliance gap analysis</li>
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">Vulnerability assessment</li>
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">Business impact analysis</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-lg" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                        <div class="text-blue-500 font-bold text-xl mb-2">Phase 2</div>
+                        <h4 class="font-bold mb-2" itemprop="name">Remediation Planning</h4>
+                        <ul class="space-y-2">
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">Collaborative roadmap</li>
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">Policy & control development</li>
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">Technology recommendations</li>
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">Resource planning</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-lg" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                        <div class="text-blue-500 font-bold text-xl mb-2">Phase 3</div>
+                        <h4 class="font-bold mb-2" itemprop="name">Implementation</h4>
+                        <ul class="space-y-2">
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">Security controls implementation</li>
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">Cloud & network security</li>
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">Penetration testing</li>
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">Architecture review</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-lg" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                        <div class="text-blue-500 font-bold text-xl mb-2">Phase 4</div>
+                        <h4 class="font-bold mb-2" itemprop="name">Audit Preparation</h4>
+                        <ul class="space-y-2">
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">Evidence collection</li>
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">Readiness assessment</li>
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">Auditor coordination</li>
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">Remediation support</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                        <h3 class="text-xl font-bold mb-4" itemprop="name">Additional Compliance Services</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">PCI DSS compliance</span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">HIPAA/GDPR readiness</span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">Audit preparation</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                        <h3 class="text-xl font-bold mb-4" itemprop="name">Ongoing Support</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">vCISO services</span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">Security training</span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">Continuous monitoring</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Security Services -->
+        <section id="technical" class="service-section" itemscope itemtype="https://schema.org/Service">
+            <div class="bg-white rounded-lg shadow-lg service-card">
+                <h2 class="text-3xl font-bold mb-6" itemprop="name">Technical Security Services</h2>
+                <p class="text-gray-600 mb-6" itemprop="description">Secure your infrastructure with compliance-first solutions.</p>
+
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                    <div itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                        <h3 class="text-xl font-bold mb-4" itemprop="name">Cloud Security</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">
+                                    <strong>AWS/Azure hardening:</strong> CIS Benchmark implementation, IAM policy optimization, VPC flow logging
+                                </span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">
+                                    <strong>Compliance configurations:</strong> Automated compliance checks using AWS Config/Azure Policy
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="mt-4 p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-bold mb-2">Implementation Timeline</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 bg-blue-500 rounded-full mr-2"></div>
+                                    <span>Week 1-2: Assessment & Planning</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 bg-blue-500 rounded-full mr-2"></div>
+                                    <span>Week 3-4: Hardening Implementation</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 bg-blue-500 rounded-full mr-2"></div>
+                                    <span>Week 5: Testing & Validation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                        <h3 class="text-xl font-bold mb-4" itemprop="name">Zero Trust Architecture</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">
+                                    <strong>Secure access controls:</strong> MFA enforcement, conditional access policies, device compliance checks
+                                </span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">
+                                    <strong>Network segmentation:</strong> Micro-perimeter creation, software-defined perimeters
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="mt-4 p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-bold mb-2">Implementation Phases</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 bg-blue-500 rounded-full mr-2"></div>
+                                    <span>Phase 1: Identity Foundation (4-6 weeks)</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 bg-blue-500 rounded-full mr-2"></div>
+                                    <span>Phase 2: Device Trust (3-4 weeks)</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 bg-blue-500 rounded-full mr-2"></div>
+                                    <span>Phase 3: Application Access (4-8 weeks)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                        <h3 class="text-xl font-bold mb-4" itemprop="name">Vulnerability Management</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">
+                                    <strong>Scanning & prioritization:</strong> CVSS scoring, exploitability analysis, business context weighting
+                                </span>
+                            </li>
+                            <li class="flex items-start" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1" aria-hidden="true"></i>
+                                <span itemprop="name">
+                                    <strong>Remediation workflows:</strong> Jira integration, automated ticketing, SLA tracking
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="mt-4 p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-bold mb-2">Standard Process</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 bg-blue-500 rounded-full mr-2"></div>
+                                    <span>Weekly automated scans</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 bg-blue-500 rounded-full mr-2"></div>
+                                    <span>48-hour critical vulnerability response</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 bg-blue-500 rounded-full mr-2"></div>
+                                    <span>Monthly executive reports</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compliance Services Note -->
+        <section id="compliance-note" class="service-section">
+            <div class="bg-white rounded-lg shadow-lg service-card">
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Important Note</h3>
+                    <p class="mb-4">Broadway Network Solutions specializes in compliance preparation. We do not issue certifications but partner with accredited audit firms to ensure successful outcomes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Partner With Us -->
+        <section class="service-section">
+            <div class="bg-blue-50 rounded-lg shadow-lg service-card">
+                <h2 class="text-3xl font-bold mb-6 text-center">Why Partner With Us?</h2>
+                <p class="text-xl text-gray-600 mb-8 text-center max-w-2xl mx-auto">Where deep expertise meets actionable security strategies - cutting through complexity to deliver measurable results.</p>
+
+                <!-- Differentiators Section -->
+                <div class="mb-12">
+                    <div class="bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto">
+                        <h3 class="text-2xl font-bold mb-6 text-center text-blue-600">Our Differentiators</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start p-4 hover:bg-gray-50 rounded-lg transition">
+                                <i class="fas fa-balance-scale text-purple-500 text-xl mr-3 mt-1" aria-hidden="true"></i>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Vendor-Neutral Guidance</h4>
+                                    <p class="text-gray-600">Technology-agnostic strategies tailored to your stack</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start p-4 hover:bg-gray-50 rounded-lg transition">
+                                <i class="fas fa-book-open text-green-500 text-xl mr-3 mt-1" aria-hidden="true"></i>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Regulatory Expertise</h4>
+                                    <p class="text-gray-600">Simplified compliance navigation across multiple frameworks</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start p-4 hover:bg-gray-50 rounded-lg transition">
+                                <i class="fas fa-comments text-blue-500 text-xl mr-3 mt-1" aria-hidden="true"></i>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Clear Communication</h4>
+                                    <p class="text-gray-600">Jargon-free reporting and executive alignment</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Feature Columns -->
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="text-center p-4">
+                        <div class="mb-4 text-blue-500 text-3xl">
+                            <i class="fas fa-certificate" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Certified Excellence</h3>
+                        <p class="text-gray-600">OSCP, CCIE Security, and CISSP certified professionals</p>
+                    </div>
+
+                    <div class="text-center p-4">
+                        <div class="mb-4 text-blue-500 text-3xl">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Business Alignment</h3>
+                        <p class="text-gray-600">Security strategies that support organizational growth</p>
+                    </div>
+
+                    <div class="text-center p-4">
+                        <div class="mb-4 text-blue-500 text-3xl">
+                            <i class="fas fa-users-cog" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Tailored Solutions</h3>
+                        <p class="text-gray-600">Custom implementations matching your operational needs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+     <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12" aria-label="Footer">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">About Us</h4>
+                    <p class="text-gray-400">Delivering comprehensive cybersecurity solutions to protect your business in an evolving threat landscape.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2" aria-hidden="true"></i>
+                            <span>24/7 Support Available</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
+                            <span>info@broadwaysolutions.ca</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2" aria-hidden="true"></i>
+                            <span>Mississauga, Ontario, Canada</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
